@@ -1,2 +1,2 @@
 # Phpill-Skeleton
-Phpill Framework 3 Skeleton Application
+Phpill Framework Skeleton Application
