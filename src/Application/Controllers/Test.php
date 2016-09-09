@@ -29,6 +29,8 @@ class Test extends \Phpill\Libraries\Controller {
 		//$data = new \Monolog\Handler\StreamHandler(APPPATH.'Logs/app.log', \Monolog\Logger::WARNING);
 		//$log->pushHandler($data); 
 		//$log->addWarning('Foo');
+		
+		\Phpill\Modules\Core\Helpers\Common::crc32hex("test");
 	}
 	
 	public function index()

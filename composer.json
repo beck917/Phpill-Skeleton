@@ -3,9 +3,14 @@
 	    {
 	        "type": "vcs",
 	        "url":  "https://github.com/beck917/Phpill.git"
+	    },
+	    {
+	        "type": "vcs",
+	        "url":  "https://github.com/beck917/Phpill-Modules.git"
 	    }
     ],
     "require": {
-        "beck/phpill": "dev-master"
+        "beck/phpill": "dev-master",
+		"beck/phpill-modules": "dev-master"
     }
 }

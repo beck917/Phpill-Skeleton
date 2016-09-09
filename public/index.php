@@ -42,7 +42,7 @@ $phpill_modules = '../../../Modules';
  * line out. When running an application on a new server, uncomment this line
  * to check the PHP version quickly.
  */
-version_compare(PHP_VERSION, '5.3', '<') and exit('Phpill requires PHP 5.3 or newer.');
+version_compare(PHP_VERSION, '5.4', '<') and exit('Phpill requires PHP 5.3 or newer.');
 
 /**
  * Set the error reporting level. Unless you have a special need, E_ALL is a
