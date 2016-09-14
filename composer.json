@@ -10,7 +10,7 @@
 	    }
     ],
     "require": {
-        "beck/phpill": "dev-master",
+		"beck/phpill": "dev-master",
 		"beck/phpill-modules": "dev-master"
     }
 }
