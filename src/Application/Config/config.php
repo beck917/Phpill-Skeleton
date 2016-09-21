@@ -56,12 +56,12 @@ $config['enable_hooks'] = FALSE;
  *  4 - Debugging
  *  5 - Testing
  */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = 2;
 
 /**
  * Message logging directory.
  */
-$config['log_directory'] = APPPATH.'logs/phpill';
+$config['log_directory'] = APPPATH.'Logs/phpill';
 
 /**
  * Enable or disable displaying of Phpill error pages. This will not affect
@@ -84,7 +84,7 @@ $config['render_stats'] = true;
  */
 $config['modules'] = array
 (
-	MODPATH.'Lottery',//常量模块
+	MODPATH.'Minion',//任务模块
 	MODPATH.'Core',//核心模块
 );
 

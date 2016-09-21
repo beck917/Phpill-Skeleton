@@ -15,8 +15,8 @@ class Test extends \Phpill\Libraries\Controller {
 	{
 		//\Phpill\Helpers\Html::anchor("test");
 		echo "test";  
-		//$match_model = new \Application\Models\Match(); 
-		//$match_model->getMatchId(6534);
+		$match_model = new \Application\Models\Match(); 
+		$match_model->getMatchId(6534);
 		
 		//echo \Modules\Core\Helpers\Common::getUUID();
 		
@@ -30,11 +30,19 @@ class Test extends \Phpill\Libraries\Controller {
 		//$log->pushHandler($data); 
 		//$log->addWarning('Foo');
 		
-		\Phpill\Modules\Core\Helpers\Common::crc32hex("test");
+		\Phpill\Modules\Core\Helpers\Commo::crc32hex("test");
 	}
 	
 	public function index()
 	{
-		echo "index";
+        strpos();
+        try {
+            strpos();
+        } catch (\Exception $exc) {
+            echo 'test';
+            //echo $exc->getTraceAsString();
+        }
+
+        echo "index";
 	}
 }

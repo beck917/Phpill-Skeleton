@@ -23,7 +23,7 @@ $phpill_application = '../src/Application';
  *
  * This path can be absolute or relative to this file.
  */
-$phpill_modules = '../../../Modules';
+//$phpill_modules = '../../../Modules';
 
 /**
  * Phpill system directory. This directory should contain the core/ directory,
@@ -78,13 +78,15 @@ is_link(PHPILL) and chdir(dirname(realpath(__FILE__)));
 
 // Define application and system paths
 define('APPPATH', str_replace('\\', '/', realpath($phpill_application)).'/');
-define('MODPATH', str_replace('\\', '/', realpath($phpill_modules)).'/');
+//define('MODPATH', str_replace('\\', '/', realpath($phpill_modules)).'/');
 //define('SERPATH', str_replace('\\', '/', realpath($phpill_server)).'/');
 //define('ROOTPATH', str_replace('\\', '/', realpath($phpill_root)).'/');
 
 // Clean up
-unset($phpill_application, $phpill_modules, $phpill_server);
+unset($phpill_application, $phpill_server);
 
 require __DIR__ . '/../vendor/autoload.php';
+
+$container = new \Phpill\Modules\Container();
 // Initialize Phpill
-\Phpill\Core\App::run();
+\Phpill\Core\App::run($container);
