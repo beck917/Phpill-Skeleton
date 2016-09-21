@@ -61,7 +61,7 @@ $config['log_threshold'] = 2;
 /**
  * Message logging directory.
  */
-$config['log_directory'] = APPPATH.'Logs/phpill';
+$config['log_directory'] = DOCROOT."..".DIRECTORY_SEPARATOR.'logs/phpill';
 
 /**
  * Enable or disable displaying of Phpill error pages. This will not affect

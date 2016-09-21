@@ -13,6 +13,7 @@ namespace Application\Controllers;
 class Test extends \Phpill\Libraries\Controller {
 	public function test1()
 	{
+        echo DOCROOT;
 		//\Phpill\Helpers\Html::anchor("test");
 		echo "test";  
 		$match_model = new \Application\Models\Match(); 
@@ -30,7 +31,7 @@ class Test extends \Phpill\Libraries\Controller {
 		//$log->pushHandler($data); 
 		//$log->addWarning('Foo');
 		
-		\Phpill\Modules\Core\Helpers\Commo::crc32hex("test");
+		//\Phpill\Modules\Core\Helpers\Commo::crc32hex("test");
 	}
 	
 	public function index()
